@@ -294,15 +294,9 @@ class MFRC522:
     self.MFRC522_Reset();
     
     self.Write_MFRC522(self.TModeReg, 0x8D)
-    print(hex(self.Read_MFRC522(self.TModeReg)))
     self.Write_MFRC522(self.TPrescalerReg, 0x3E)
-    print(hex(self.Read_MFRC522(self.TPrescalerReg)))
     self.Write_MFRC522(self.TReloadRegL, 30)
-    print(hex(self.Read_MFRC522(self.TReloadRegL)))
     self.Write_MFRC522(self.TReloadRegH, 0)
-    print(hex(self.Read_MFRC522(self.TReloadRegH)))
     self.Write_MFRC522(self.TxAutoReg, 0x40)
-    print(hex(self.Read_MFRC522(self.TxAutoReg)))
     self.Write_MFRC522(self.ModeReg, 0x3D)
-    print(hex(self.Read_MFRC522(self.ModeReg)))
     self.AntennaOn()
