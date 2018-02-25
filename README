@@ -1,0 +1,11 @@
+You need to put a json file formatted as follow and put it in the /flash/ directory in order to connect the Internet.
+{
+    "ip": "",
+    "mask": "",
+    "gateway": "",
+    "dns": "",
+    "ssid": "",
+    "password": ""
+}
+
+By default, in the main.py file, the LoPy will try to connect to the Internet via wifi, you can disable that by commenting the line in the file.
